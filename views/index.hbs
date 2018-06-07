@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text</th>
+            <th>User Id</th>
+            <th>Created Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Text}}</td>
+            <td>{{this.UserID}}</td>
+            <td>{{this.CreatedDate}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
